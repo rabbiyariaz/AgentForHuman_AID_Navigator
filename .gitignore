@@ -1,0 +1,23 @@
+# Secrets — never commit
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# AgentCore CLI state
+agentcore/.cli/
+agentcore/.env.local
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

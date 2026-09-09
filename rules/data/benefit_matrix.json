@@ -1,0 +1,565 @@
+{
+  "benefit_matrix": [
+    {
+      "home_type": "MF",
+      "income_bracket": 0,
+      "household_size": 1,
+      "gas_benefit": 1512,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 904,
+      "electric_benefit": 904
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 0,
+      "household_size": 2,
+      "gas_benefit": 1733,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1121,
+      "electric_benefit": 1121
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 0,
+      "household_size": 3,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1337,
+      "electric_benefit": 1337
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 0,
+      "household_size": 4,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1554,
+      "electric_benefit": 1554
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 5000,
+      "household_size": 1,
+      "gas_benefit": 1137,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1137,
+      "oil_pay_electric_vendor": 529,
+      "electric_benefit": 529
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 5000,
+      "household_size": 2,
+      "gas_benefit": 1358,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1358,
+      "oil_pay_electric_vendor": 746,
+      "electric_benefit": 746
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 5000,
+      "household_size": 3,
+      "gas_benefit": 1580,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 962,
+      "electric_benefit": 962
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 5000,
+      "household_size": 4,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1179,
+      "electric_benefit": 1179
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 10000,
+      "household_size": 1,
+      "gas_benefit": 687,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 687,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 10000,
+      "household_size": 2,
+      "gas_benefit": 908,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 908,
+      "oil_pay_electric_vendor": 296,
+      "electric_benefit": 296
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 10000,
+      "household_size": 3,
+      "gas_benefit": 1130,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1130,
+      "oil_pay_electric_vendor": 512,
+      "electric_benefit": 512
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 10000,
+      "household_size": 4,
+      "gas_benefit": 1351,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1351,
+      "oil_pay_electric_vendor": 729,
+      "electric_benefit": 729
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 15000,
+      "household_size": 1,
+      "gas_benefit": 237,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 237,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 15000,
+      "household_size": 2,
+      "gas_benefit": 458,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 458,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 15000,
+      "household_size": 3,
+      "gas_benefit": 680,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 680,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 15000,
+      "household_size": 4,
+      "gas_benefit": 901,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 901,
+      "oil_pay_electric_vendor": 279,
+      "electric_benefit": 279
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 20000,
+      "household_size": 1,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 20000,
+      "household_size": 2,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 20000,
+      "household_size": 3,
+      "gas_benefit": 230,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 230,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 20000,
+      "household_size": 4,
+      "gas_benefit": 451,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 451,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 25000,
+      "household_size": 1,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 25000,
+      "household_size": 2,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 25000,
+      "household_size": 3,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 25000,
+      "household_size": 4,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 30000,
+      "household_size": 1,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 30000,
+      "household_size": 2,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 30000,
+      "household_size": 3,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "MF",
+      "income_bracket": 30000,
+      "household_size": 4,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 0,
+      "household_size": 1,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1265,
+      "electric_benefit": 1265
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 0,
+      "household_size": 2,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1481,
+      "electric_benefit": 1481
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 0,
+      "household_size": 3,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1698,
+      "electric_benefit": 1698
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 0,
+      "household_size": 4,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1800,
+      "electric_benefit": 1800
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 5000,
+      "household_size": 1,
+      "gas_benefit": 1643,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 890,
+      "electric_benefit": 890
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 5000,
+      "household_size": 2,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1106,
+      "electric_benefit": 1106
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 5000,
+      "household_size": 3,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1323,
+      "electric_benefit": 1323
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 5000,
+      "household_size": 4,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1539,
+      "electric_benefit": 1539
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 10000,
+      "household_size": 1,
+      "gas_benefit": 1193,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1193,
+      "oil_pay_electric_vendor": 440,
+      "electric_benefit": 440
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 10000,
+      "household_size": 2,
+      "gas_benefit": 1415,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1415,
+      "oil_pay_electric_vendor": 656,
+      "electric_benefit": 656
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 10000,
+      "household_size": 3,
+      "gas_benefit": 1636,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 873,
+      "electric_benefit": 873
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 10000,
+      "household_size": 4,
+      "gas_benefit": 1800,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1500,
+      "oil_pay_electric_vendor": 1089,
+      "electric_benefit": 1089
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 15000,
+      "household_size": 1,
+      "gas_benefit": 743,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 743,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 15000,
+      "household_size": 2,
+      "gas_benefit": 965,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 965,
+      "oil_pay_electric_vendor": 206,
+      "electric_benefit": 206
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 15000,
+      "household_size": 3,
+      "gas_benefit": 1186,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1186,
+      "oil_pay_electric_vendor": 423,
+      "electric_benefit": 423
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 15000,
+      "household_size": 4,
+      "gas_benefit": 1407,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 1407,
+      "oil_pay_electric_vendor": 639,
+      "electric_benefit": 639
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 20000,
+      "household_size": 1,
+      "gas_benefit": 293,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 293,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 20000,
+      "household_size": 2,
+      "gas_benefit": 515,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 515,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 20000,
+      "household_size": 3,
+      "gas_benefit": 736,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 736,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 20000,
+      "household_size": 4,
+      "gas_benefit": 957,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 957,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 25000,
+      "household_size": 1,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 25000,
+      "household_size": 2,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 25000,
+      "household_size": 3,
+      "gas_benefit": 286,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 286,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 25000,
+      "household_size": 4,
+      "gas_benefit": 507,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 507,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 30000,
+      "household_size": 1,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 30000,
+      "household_size": 2,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 30000,
+      "household_size": 3,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    },
+    {
+      "home_type": "SF",
+      "income_bracket": 30000,
+      "household_size": 4,
+      "gas_benefit": 200,
+      "oil_benefit": 1500,
+      "oil_pay_gas_vendor": 200,
+      "oil_pay_electric_vendor": 200,
+      "electric_benefit": 200
+    }
+  ],
+  "hir_benefit_flat": 200
+}

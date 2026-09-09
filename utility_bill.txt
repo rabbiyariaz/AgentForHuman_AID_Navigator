@@ -1,0 +1,26 @@
+WASHINGTON GAS
+Statement of Account
+
+Account Number: 4471-8823-01
+Service Address: 1428 Xavier Street NW, Washington, DC 20011
+Billing Date: August 22, 2026
+Statement Period: July 21, 2026 - August 20, 2026
+
+Customer: Angela Reeves
+
+Current Charges:
+  Natural Gas Service                     $86.40
+  Distribution Charge                     $22.15
+  DC Rights-of-Way Fee                     $3.10
+  Total Current Charges                   $111.65
+
+Previous Balance:                         $228.00
+Payments Received Since Last Bill:        -$0.00
+Past Due Amount:                          $228.00
+
+Total Amount Due:                         $339.65
+Due Date: September 12, 2026
+
+Your account shows a past due balance. Please contact Washington Gas
+at 1-844-WASHGAS to discuss payment arrangements or assistance
+programs if you are having difficulty paying your bill.
