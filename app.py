@@ -724,7 +724,7 @@ def friendly_reason(case: dict) -> str:
         return "The evidence contains a conflict that should be reviewed by a caseworker."
 
     if status == "needs_followup":
-        missing = triage.get("missing_fields") or case.get("missing_fields") or []
+        missing = case.get("next_action", {}).get("missing_fields") or []
         if missing:
             readable = ", ".join(str(x).replace("_", " ") for x in missing)
             return f"Important information is missing: {readable}. Ask the resident before deciding."
@@ -864,35 +864,49 @@ def render_decision(case: dict) -> None:
     if urgency:
         badges.append('<span class="badge urgent">URGENT</span>')
 
+    
     if confidence is not None:
-        badges.append(
-            f'<span class="badge confidence">{float(confidence):.0%} confidence</span>'
+            badges.append(
+                f'<span class="badge confidence">{float(confidence):.0%} min. confidence</span>'
+            )
+    
+    st.markdown(
+            '<div class="decision-header">'
+            "<div>"
+            '<div class="decision-kicker">CASE OUTCOME</div>'
+            f'<div class="decision-title">{title}</div>'
+            "</div>"
+            f'<div class="badge-row">{"".join(badges)}</div>'
+            "</div>",
+            unsafe_allow_html=True,
+        )
+    
+    st.markdown(
+            f'<div class="status {kind}">'
+            f"<h3>{subtitle}</h3>"
+            "<p>The evidence and next action are shown below so the caseworker can act quickly and audit the decision.</p>"
+            "</div>",
+            unsafe_allow_html=True,
         )
 
-    st.markdown(
-        '<div class="decision-header">'
-        "<div>"
-        '<div class="decision-kicker">CASE OUTCOME</div>'
-        f'<div class="decision-title">{title}</div>'
-        "</div>"
-        f'<div class="badge-row">{"".join(badges)}</div>'
-        "</div>",
-        unsafe_allow_html=True,
-    )
+    STATUS_DISPLAY = {
+    "needs_followup": "requesting more information",
+    "needs_review": "flagging for caseworker review",
+    "ready_for_eligibility": "proceeding to a decision",
+    "flag_urgent": "flagging the case as urgent",
+}
 
-    st.markdown(
-        f'<div class="status {kind}">'
-        f"<h3>{subtitle}</h3>"
-        "<p>The evidence and next action are shown below so the caseworker can act quickly and audit the decision.</p>"
-        "</div>",
-        unsafe_allow_html=True,
-    )
+    def _humanize_trace(event: str) -> str:
+        for token, phrase in STATUS_DISPLAY.items():
+            if token in event:
+                return event.replace(token, phrase)
+        return event
 
     agent_trace = case.get("agent_trace", [])
     if agent_trace:
         with st.expander("Agent activity", expanded=False):
             for event in agent_trace:
-                st.write(f"• {event}")
+                st.write(f"• {_humanize_trace(event)}")
 
     if case.get("status") == "needs_followup":
         st.markdown("**Next question(s) to ask**")
@@ -1038,6 +1052,7 @@ def render_intake() -> None:
                             )
                         )
                         st.session_state["current_case"] = result
+                        st.session_state["case_queue"].append(result)
                         st.rerun()
                     except Exception as exc:
                         st.error(f"The case could not be analyzed: {exc}")
@@ -1134,13 +1149,25 @@ def render_queue() -> None:
         unsafe_allow_html=True,
     )
 
-    if st.button("Load five example cases  →", type="primary"):
+    load_demo, clear_queue = st.columns([1, 1])
+
+    with load_demo:
+        load_examples = st.button("Load five example cases  →", type="primary")
+
+    with clear_queue:
+        clear_cases = st.button("Clear queue")
+
+    if clear_cases:
+        st.session_state["case_queue"].clear()
+        st.rerun()
+
+    if load_examples:
         with st.spinner("Processing the community queue..."):
             results = [
                 run_case(item["text"], item["document"])
                 for item in DEMO_CASES
             ]
-            st.session_state["queue"] = rank_cases(results)
+            st.session_state["case_queue"].extend(results)
             st.rerun()
 
     st.markdown(
@@ -1148,7 +1175,7 @@ def render_queue() -> None:
         unsafe_allow_html=True,
     )
 
-    queue = st.session_state.get("queue")
+    queue = rank_cases(st.session_state["case_queue"])
 
     if not queue:
         st.markdown(
@@ -1241,6 +1268,9 @@ def render_queue() -> None:
 
 
 def main() -> None:
+    if "case_queue" not in st.session_state:
+        st.session_state["case_queue"] = []
+
     inject_styles()
 
     st.markdown(

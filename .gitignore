@@ -21,3 +21,5 @@ agentcore/.env.local
 # OS
 .DS_Store
 Thumbs.db
+.coverage
+runtime.py.backup

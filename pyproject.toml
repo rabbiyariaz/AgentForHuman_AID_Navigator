@@ -1,0 +1,23 @@
+[project]
+name = "aid-navigator"
+version = "0.1.0"
+description = "AID Navigator - DC LIHEAP eligibility triage agent"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic==2.13.5",
+    "pydantic-settings==2.15.0",
+    "pydantic_core==2.46.5",
+    "python-dotenv==1.2.3",
+    "strands-agents==1.54.0",
+    "strands-agents-tools==0.8.7",
+    "groq>=0.11.0",
+    "openai>=1.0.0",
+    "pytest>=7.0.0",
+    "streamlit>=1.40.0",
+    "bedrock-agentcore==1.22.0",
+    "uvicorn==0.52.4",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

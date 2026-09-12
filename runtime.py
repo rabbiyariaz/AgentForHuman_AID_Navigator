@@ -24,6 +24,11 @@ def _request_value(payload: dict[str, Any], name: str) -> str | None:
 
 @app.entrypoint
 def invoke(payload: dict[str, Any]) -> dict[str, Any]:
+
+    """Process one intake request and return a caseworker decision package."""
+    print(f"DEBUG raw payload type: {type(payload)!r}")
+    print(f"DEBUG raw payload value: {payload!r}")
+
     """Process one intake request and return a caseworker decision package."""
     if not isinstance(payload, dict):
         raise ValueError("Request payload must be a JSON object.")
