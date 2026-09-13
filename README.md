@@ -118,7 +118,8 @@ Representative outcomes shown in the demo:
 ## Getting Started
 
 ```bash
-git clone [[repo URL](https://github.com/rabbiyariaz/AgentForHuman_AID_Navigator/)]
+git clone https://github.com/rabbiyariaz/AgentForHuman_AID_Navigator.git
+cd AgentForHuman_AID_Navigator
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 source .venv/bin/activate     # macOS/Linux
