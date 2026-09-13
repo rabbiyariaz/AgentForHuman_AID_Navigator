@@ -234,7 +234,10 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
    ## AWS Builder ID & Build Story
 
-- [Building AID Navigator: What I Learned Deploying a Strands Agent to Bedrock AgentCore](https://builder.aws.com/content/3JE7Rl04h6HUGSlNmBGOWuN5ZDt/building-aid-navigator-what-i-learned-deploying-a-strands-agent-to-bedrock-agentcore-agentsforhumans)
-- [My First Time on AWS: What Building AID Navigator Actually Taught Me](https://builder.aws.com/content/3JGy7LiKA1UEETD9vVtJTwusXPx/my-first-time-on-aws-what-building-aid-navigator-actually-taught-me)
+A three-part series on building AID Navigator:
 
+1. [Building AID Navigator: What I Learned Deploying a Strands Agent to Bedrock AgentCore](https://builder.aws.com/content/3JE7Rl04h6HUGSlNmBGOWuN5ZDt/building-aid-navigator-what-i-learned-deploying-a-strands-agent-to-bedrock-agentcore-agentsforhumans)
+2. [My First Time on AWS: What Building AID Navigator Actually Taught Me](https://builder.aws.com/content/3JGy7LiKA1UEETD9vVtJTwusXPx/my-first-time-on-aws-what-building-aid-navigator-actually-taught-me-agentsforhumans)
+3. [Why AID Navigator's Agent Isn't Allowed to Decide Anything](https://builder.aws.com/content/3JGzh0dKseyNibtNW9VePVRXrAD/why-aid-navigators-agent-isnt-allowed-to-decide-anything-agentsforhumans)
+   
    *(If the link above returns a 403 error, copy and paste the URL directly into your browser, this is a known CloudFront referrer-blocking issue on AWS Builder Center, not a broken link.)*
