@@ -77,17 +77,7 @@ AID Navigator runs each case through a deterministic decision pipeline:
 ![AID Navigator architecture](docs/aid_navigator_architecture_diagram.png)
 
 
-**Why the Strands Agent is used this way:** the Strands agent owns evidence
-investigation and dynamically selects the appropriate tools based on what it
-finds. For example, it can extract evidence, request missing information,
-cross-check a supporting document, or check for contradictions.
-
-The deterministic Python layer then takes over for safety-critical decisions:
-required-field validation, contradiction gates, eligibility, benefit
-calculation, crisis qualification, and final triage ranking.
-
-This separation gives AID Navigator genuine agentic behavior without allowing
-an LLM to make an authoritative benefits decision.
+**Why the Strands Agent is used this way:** see [Agentic Control vs Deterministic Control](#agentic-control-vs-deterministic-control) above.
 
 **Why Groq:** the project began on Amazon Bedrock. Bedrock access was blocked during development, so extraction was migrated to Groq (`openai/gpt-oss-120b`) to keep development moving. This is documented as a development-speed decision, not a permanent architectural stance.
 
