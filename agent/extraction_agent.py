@@ -73,9 +73,7 @@ def merge_evidence(text_evidence: Any, document_evidence: Any | None = None) -> 
     Returns a plain {"fields": ..., "audit": ...} dict, NOT an
     ExtractionOutput — the merge may still be incomplete (e.g. neither
     source states home_type), and forcing Pydantic validation here is
-    exactly the bug that just crashed. The caller (run_extraction_pipeline)
-    decides completeness via evaluate_next_action and only builds a
-    validated ExtractionOutput once the merged result is actually whole.
+    exactly the bug that just crashed.
 
     Fields present and agreeing in both sources get source="both" and the
     higher of the two confidences. Fields present in only one source keep
