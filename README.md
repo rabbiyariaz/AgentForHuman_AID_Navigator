@@ -74,7 +74,7 @@ AID Navigator runs each case through a deterministic decision pipeline:
 - **Missing/uncertain data:** required field missing or low-confidence → case stops with a specific follow-up question
 - **Conflicting evidence:** >5% income disagreement or any mismatch on an exact-match field → case flagged for caseworker review, blocked from auto-eligibility
 
-![AID Navigator architecture](docs/architecture.png)
+![AID Navigator architecture](docs/aid_navigator_architecture_diagram.png)
 
 
 **Why the Strands Agent is used this way:** the Strands agent owns evidence
