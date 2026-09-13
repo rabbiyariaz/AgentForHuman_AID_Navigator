@@ -233,5 +233,4 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 ---
 
 ## AWS Builder ID
-
 [Building AID Navigator: What I Learned Deploying a Strands Agent to Bedrock AgentCore](https://builder.aws.com/content/3JE7Rl04h6HUGSlNmBGOWuN5ZDt/building-aid-navigator-what-i-learned-deploying-a-strands-agent-to-bedrock-agentcore-agentsforhumans)
