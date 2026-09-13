@@ -232,5 +232,7 @@ Stated plainly, not as an afterthought:
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 ---
 
-## AWS Builder ID
-https://builder.aws.com/content/3JE7Rl04h6HUGSlNmBGOWuN5ZDt/building-aid-navigator-what-i-learned-deploying-a-strands-agent-to-bedrock-agentcore-agentsforhumans
+   ## AWS Builder ID
+   [Building AID Navigator: What I Learned Deploying a Strands Agent to Bedrock AgentCore](https://builder.aws.com/content/3JE7Rl04h6HUGSlNmBGOWuN5ZDt/building-aid-navigator-what-i-learned-deploying-a-strands-agent-to-bedrock-agentcore-agentsforhumans)
+
+   *(If the link above returns a 403 error, copy and paste the URL directly into your browser, this is a known CloudFront referrer-blocking issue on AWS Builder Center, not a broken link.)*
