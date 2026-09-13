@@ -67,19 +67,14 @@ an LLM to make an authoritative benefits decision.
 
 ## Architecture
 
-```
-
 AID Navigator runs each case through a deterministic decision pipeline:
 
 - **Triage priority:** crisis → urgent-incomplete → contradiction → eligible
 - **Eligibility:** DC DOEE FY26 income and crisis rules, with benefits resolved via a fixed lookup table (not LLM-generated)
 - **Missing/uncertain data:** required field missing or low-confidence → case stops with a specific follow-up question
-- **Conflicting evidence:** >5% income disagreement or any mismatch on an exact-match field → case flagged for caseworker review, blocked from auto-eligibility.
+- **Conflicting evidence:** >5% income disagreement or any mismatch on an exact-match field → case flagged for caseworker review, blocked from auto-eligibility
 
 ![AID Navigator architecture](docs/architecture.png)
-
-```
-
 **Why the Strands Agent is used this way:** the Strands agent owns evidence
 investigation and dynamically selects the appropriate tools based on what it
 finds. For example, it can extract evidence, request missing information,
