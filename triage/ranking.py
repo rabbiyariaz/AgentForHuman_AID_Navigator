@@ -117,17 +117,6 @@ def classify_case(pipeline_result: dict[str, Any]) -> dict[str, Any]:
  
  
 def rank_cases(cases: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Take a batch of run_extraction_pipeline outputs and return them
-    sorted highest-priority first.
- 
-    Sort key: (tier ascending, confidence ascending). Same tier means
-    equally urgent by situation; the lower-confidence case within that
-    tier is the one more likely to be wrong and gets looked at first.
- 
-    Each returned item is the original pipeline_result plus a "triage"
-    key holding tier/reason/confidence/eligibility — nothing from the
-    input is discarded.
-    """
     classified = []
     for case in cases:
         triage_info = classify_case(case)
