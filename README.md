@@ -241,8 +241,7 @@ Stated plainly, not as an afterthought:
 
 ## License
 
-[MIT / Apache 2.0 — choose one and add the LICENSE file to the repo root]
-
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 ---
 
 ## AWS Builder ID
