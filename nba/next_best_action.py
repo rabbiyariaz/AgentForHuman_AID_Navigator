@@ -1,13 +1,4 @@
-"""Creates follow-up questions, urgency signals, and next-step suggestions
-for incomplete or ambiguous cases.
 
-Deterministic by design, same as the eligibility rules — this module makes
-no LLM calls. It only inspects the already-extracted (possibly incomplete)
-evidence and decides what should happen next. This is the layer that turns
-"the LLM couldn't confidently fill this field" into "here is a specific
-question a caseworker or applicant needs answered," rather than letting
-that gap surface as an unhandled schema validation crash.
-"""
 
 from __future__ import annotations
 
@@ -114,13 +105,6 @@ def evaluate_next_action(
     confidences: dict[str, Any],
     original_text: str | None = None,
 ) -> NextBestAction:
-    """Single entry point: decide what should happen next for this case.
-
-    Call this instead of letting a missing required field surface as an
-    unhandled ExtractedApplicantFields validation error. If status is
-    "needs_followup", do not proceed to eligibility evaluation — surface
-    followup_questions to the caseworker/applicant instead.
-    """
     missing = find_missing_required_fields(raw_fields, confidences)
     is_urgent, urgency_reason = check_urgency(raw_fields, original_text)
 
