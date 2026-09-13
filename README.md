@@ -140,6 +140,12 @@ Run the Streamlit UI:
 ```bash
 streamlit run app.py
 ```
+### AgentCore Deployment Status
+
+The CDK stack, IAM roles, and `runtime.py` adapter all deploy and synthesize successfully — dependency checks, CDK build, CloudFormation changeset creation, and asset publishing all complete without error. Creation ultimately fails at the final step with `ServiceLimitExceeded: maxAgents limit exceeded`, traced to an account-level quota override capped at **0** (AWS default is 1,000), confirmed via the Service Quotas console. This is unrelated to the code or IAM permissions — an AWS Support case has been open since September 12 to resolve it.
+
+Because of this, the demo runs against the **Streamlit UI** and `main.py`, both using the identical extraction → evidence merge → eligibility → triage pipeline `runtime.py` would serve — AgentCore adds hosting, not application logic.
+
 
 ### Deploy to AgentCore Runtime
 
