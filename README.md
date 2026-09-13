@@ -144,7 +144,7 @@ streamlit run app.py
 
 The full deployment pipeline works correctly up through AWS: dependency checks, CDK build, CloudFormation synthesis, asset publishing, and IAM role creation all complete successfully across multiple `agentcore deploy` runs. Locally, the AgentCore dev server (`agentcore launch --local` / dev mode) starts and reaches `Status: running`, serving the same `runtime.py` entry point the cloud runtime would use. Cloud resource creation fails only at the final step, with `ServiceLimitExceeded: maxAgents limit exceeded`, traced to an account-level quota override capped at **0** (AWS default is 1,000) via the Service Quotas console — an AWS Support case has been open since September 12.
 
-The demo therefore runs against the local AgentCore dev server and the Streamlit UI, both exercising the identical extraction → evidence merge → eligibility → triage pipeline the cloud runtime would serve.
+The demo therefore runs against the local AgentCore dev server (`agentcore dev`) and the Streamlit UI, both exercising the identical extraction → evidence merge → eligibility → triage pipeline the cloud runtime would serve.
 
 ### Deploy to AgentCore Runtime
 
