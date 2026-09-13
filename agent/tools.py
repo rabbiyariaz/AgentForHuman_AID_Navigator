@@ -60,18 +60,11 @@ def _claim_tool_call(name: str) -> None:
 # Model client
 # ---------------------------------------------------------------------------
 # Groq is used directly here so the extraction call is explicit, auditable,
-# and easy to swap models on. If the project later wires this through a
-# Strands-native model object instead, only _call_llm needs to change —
-# nothing else in this file depends on the client.
+# and easy to swap models on.
 
 _GROQ_MODEL_ID = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 _groq_client = None
 
-# Free-plan limits for this model (confirmed via console.groq.com/docs/rate-limits):
-# 30 RPM, 1K RPD, 8K TPM, 200K TPD. At ~1,000-1,300 tokens per extraction call
-# (spec + intake text in, structured JSON out), that's roughly 150-200 calls/day
-# before hitting the wall. Fine for dev/demo; mock _call_llm for iteration loops
-# and reserve real calls for validation passes.
 
 
 def _get_groq_client() -> Groq:
@@ -178,11 +171,7 @@ def _call_llm(input_text: str) -> dict[str, Any]:
     usage = response.usage
     input_tokens = getattr(usage, "prompt_tokens", 0) or 0
     output_tokens = getattr(usage, "completion_tokens", 0) or 0
-    # NOTE: no cost print here — Groq's per-model pricing differs from the
-    # Bedrock $0.80/$3.20 figures that were hardcoded before, and I'm not
-    # going to guess at a rate. Pull the real per-1M-token input/output
-    # price for _GROQ_MODEL_ID from Groq's pricing page and drop it in here
-    # if you want the cost line back.
+
     print(f"[LLM call tokens] input={input_tokens}  output={output_tokens}")
 
     raw_text = response.choices[0].message.content.strip()
