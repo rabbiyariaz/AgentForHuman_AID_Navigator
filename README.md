@@ -75,6 +75,8 @@ AID Navigator runs each case through a deterministic decision pipeline:
 - **Conflicting evidence:** >5% income disagreement or any mismatch on an exact-match field → case flagged for caseworker review, blocked from auto-eligibility
 
 ![AID Navigator architecture](docs/architecture.png)
+
+
 **Why the Strands Agent is used this way:** the Strands agent owns evidence
 investigation and dynamically selects the appropriate tools based on what it
 finds. For example, it can extract evidence, request missing information,
